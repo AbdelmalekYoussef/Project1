@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Showcase</title>
+  <link rel="icon" href="android-chrome-512x512.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #1c1c1c;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #f5c518;
+    }
+
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .movie {
+      background-color: #1c1c1c;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+      position: relative;
+    }
+
+    .movie:hover {
+      transform: scale(1.05);
+    }
+
+    .movie img {
+      width: 100%;
+      height: auto;
+    }
+
+    .movie .details {
+      padding: 15px;
+    }
+
+    .movie .details h2 {
+      font-size: 1.5em;
+      margin: 0 0 10px;
+      color: #f5c518;
+    }
+
+    .movie .details p {
+      font-size: 1em;
+      margin: 0 0 10px;
+    }
+
+    .movie .details .genre {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    .actors {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .actor {
+      text-align: center;
+    }
+
+    .actor img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .actor p {
+      margin: 10px 0 0;
+      font-size: 0.9em;
+      color: #f5c518;
+    }
+
+    .movie:hover .actors {
+      display: flex;
+    }
+    .reviews {
+      padding: 20px;
+      background-color: #1c1c1c;
+    }
+
+    .reviews h2 {
+      text-align: center;
+      color: #f5c518;
+      margin-bottom: 20px;
+    }
+
+    .review {
+      background-color: #292929;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .review h3 {
+      margin: 0 0 10px;
+      color: #f5c518;
+      font-size: 1.2em;
+    }
+
+    .review p {
+      margin: 0;
+      font-size: 1em;
+      color: #ccc;
+    }
+    .more-reviews {
+      text-align: center;
+      padding: 20px;
+      background-color: #1c1c1c;
+    }
+
+    .more-reviews a {
+      font-size: 1.2em;
+      color: #f5c518;
+      text-decoration: none;
+      border: 2px solid #f5c518;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .more-reviews a:hover {
+      background-color: #f5c518;
+      color: #1c1c1c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #1c1c1c;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Movie Showcase</h1>
+</header>
+<main>
+  <section class="movies">
+    <div class="movie">
+      <img src="bad.jpg" alt="Movie Poster">
+      <div class="details">
+        <h2>Bad boys</h2>
+        <p>Explosive action, witty banter, and unbreakable camaraderie between two Miami detectives taking on crime their way.</p>
+        <p class="genre">Genre: Action, Adventure</p>
+      </div>
+      <div class="actors">
+        <div class="actor">
+          <img src="will.webp" alt="Actor 1">
+          <p>Will smith</p>
+        </div>
+        <div class="actor">
+          <img src="martin-lawrence.avif" alt="Actor 2">
+          <p>Martin lawrence</p>
+        </div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="bullet-train-poster-scaled.jpg" alt="Movie Poster">
+      <div class="details">
+        <h2>Bullet train</h2>
+        <p>A bittersweet tale of love, dreams, and sacrifices set against the vibrant backdrop of music and ambition in Los Angeles.</p>
+        <p class="genre">Genre: Action, Drama</p>
+      </div>
+      <div class="actors">
+        <div class="actor">
+          <img src="Brad_Pitt-69858.webp" alt="Actor 1">
+          <p>Brad pitt</p>
+        </div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="bat.jpg" alt="Movie Poster">
+      <div class="details">
+        <h2>the Batman</h2>
+        <p>Dark Knight fights inner demons while protecting Gotham from chaos.</p>
+        <p class="genre">Genre: Action, Science Fiction</p>
+      </div>
+      <div class="actors">
+        <div class="actor">
+          <img src="battt.jpg" alt="Actor 1">
+          <p>Robert Pattinson</p>
+        </div>
+        <div class="actor">
+          <img src="catttt.jpeg" alt="Actor 2">
+          <p>Zoë Kravitz</p>
+        </div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="god.jpg" alt="Movie Poster">
+      <div class="details">
+        <h2>The Godfather</h2>
+        <p>Family, power, and betrayal at the heart of a criminal empire.</p>
+        <p class="genre">Genre: Crime, Drama, Gangster</p>
+      </div>
+      <div class="actors">
+        <div class="actor">
+          <img src="marlon-brando.webp" alt="Actor 1">
+          <p>Marlon Brando</p>
+        </div>
+        <div class="actor">
+          <img src="actor-al-pacino-in-the-godfather-part-ll.webp" alt="Actor 2">
+          <p>Al Pacino</p>
+        </div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg" alt="Movie Poster">
+      <div class="details">
+        <h2>Lalaland</h2>
+        <p>A bittersweet tale of love, dreams, and sacrifices set against the vibrant backdrop of music and ambition in Los Angeles.</p>
+        <p class="genre">Genre: Drama, Romance</p>
+      </div>
+      <div class="actors">
+        <div class="actor">
+          <img src="emma-stone-maniac-premiere-in-new-york-09-20-2018-12.jpg" alt="Actor 1">
+          <p>Emma stone</p>
+        </div>
+        <div class="actor">
+          <img src="144642.jpg" alt="Actor 2">
+          <p>Ryan gosly</p>
+        </div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="Fast-furious-X-1.webp" alt="Movie Poster">
+      <div class="details">
+        <h2>Fast and Furious</h2>
+        <p>High-speed action, family loyalty, and adrenaline-fueled heists.</p>
+        <p class="genre">Genre: Epic, Action</p>
+      </div>
+      <div class="actors">
+        <div class="actor">
+          <img src="9WWWSsA3RIGhvSUmkyo3l215pfn.jpg" alt="Actor 1">
+          <p>Vin Diesel</p>
+        </div>
+        <div class="actor">
+          <img src="momo.webp" alt="Actor 2">
+          <p>Jason Momoa</p>
+        </div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="comedy.jpg" alt="Movie Poster">
+      <div class="details">
+        <h2>Free guy</h2>
+        <p>An NPC discovers his purpose, turning a virtual world upside down in a hilarious and heartfelt quest for freedom and heroism.</p>
+        <p class="genre">Genre: Comedy, Family</p>
+      </div>
+      <div class="actors">
+        <div class="actor">
+          <img src="ryan-reynolds-7.webp" alt="Actor 1">
+          <p>Ryan reynolds</p>
+        </div>
+      </div>
+    </div>
+    <div class="movie">
+      <img src="scien.jpg" alt="Movie Poster">
+      <div class="details">
+        <h2>Captain America</h2>
+        <p>Heroes clash as friendship and loyalty are tested in a battle over freedom, responsibility, and opposing ideologies.</p>
+        <p class="genre">Genre: Sci-Fi, Thriller</p>
+      </div>
+      <div class="actors">
+        <div class="actor">
+          <img src="Robert-Downey-Jr.jpg" alt="Actor 1">
+          <p>Robert dawney Jr</p>
+        </div>
+        <div class="actor">
+          <img src="American-actor-Chris-Evans-2019.webp" alt="Actor 2">
+          <p>Chris Evans</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <h2>Audience Reviews</h2>
+    <div class="review">
+      <h3>John Doe</h3>
+      <p>"Absolutely loved this movie! The action sequences were breathtaking, and the story kept me on the edge of my seat. 5/5 stars!"</p>
+    </div>
+    <div class="review">
+      <h3>Jane Smith</h3>
+      <p>"A heartwarming tale with fantastic performances. Highly recommend to anyone who loves a good drama."</p>
+    </div>
+    <div class="review">
+      <h3>Sam Wilson</h3>
+      <p>"The visuals were stunning, but the plot felt a bit rushed. Overall, an enjoyable experience."</p>
+    </div>
+  </section>
+  <section class="more-reviews">
+    <a href="tickets.html">Get your tickets</a>
+  </section>
+  <section class="more-reviews">
+    <a href="https://www.imdb.com/fr/">Read More Reviews</a>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Movie Showcase. Abdelmalek Youssef.</p>
+</footer>
+</body>
+</html>
+

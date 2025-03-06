@@ -1,0 +1,345 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+        Developer Portfolio
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+<!-- Header -->
+<header class="fixed w-full bg-white dark:bg-gray-800 shadow-md z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-blue-600">
+            Portfolio
+        </div>
+        <nav class="hidden md:flex space-x-6">
+            <a class="text-gray-700 dark:text-gray-300 hover:text-blue-600" href="#home">
+                Home
+            </a>
+            <a class="text-gray-700 dark:text-gray-300 hover:text-blue-600" href="#about">
+                About
+            </a>
+            <a class="text-gray-700 dark:text-gray-300 hover:text-blue-600" href="#skills">
+                Skills
+            </a>
+            <a class="text-gray-700 dark:text-gray-300 hover:text-blue-600" href="#projects">
+                Projects
+            </a>
+            <a class="text-gray-700 dark:text-gray-300 hover:text-blue-600" href="#contact">
+                Contact
+            </a>
+        </nav>
+        <button class="text-gray-700 dark:text-gray-300 md:hidden">
+            <i class="fas fa-bars">
+            </i>
+        </button>
+        <button class="ml-4 text-gray-700 dark:text-gray-300" id="theme-toggle">
+            <i class="fas fa-moon">
+            </i>
+        </button>
+    </div>
+</header>
+<!-- Hero Section -->
+<section class="h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900" id="home">
+    <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Hi, I'm Youssef Abdelmalek
+        </h1>
+        <p class="text-lg md:text-2xl mb-6">
+            Full Stack Developer specializing in building exceptional digital experiences.
+        </p>
+        <a class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700" href="#contact">
+            Get In Touch
+        </a>
+    </div>
+</section>
+<!-- About Section -->
+<section class="py-20 bg-white dark:bg-gray-800" id="about">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">
+            About Me
+        </h2>
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img alt="Portrait of Youssef Abdelmalek, a full-stack developer, smiling and looking at the camera" class="rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/HpDmwPMmSBEEeUlcoku9WDRLlIjI4oZkgFFmW6lK5SA.jpg" width="400"/>
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <p class="mb-4">
+                    Hello! I'm Abdelmalek Youssef, a passionate full-stack developer with experience in building web applications. I enjoy creating elegant solutions to complex problems.
+                </p>
+                <p class="mb-4">
+                    My journey in web development started when I was in college, and since then, I've worked on various projects ranging from small business websites to complex enterprise applications.
+                </p>
+                <p class="mb-4">
+                    When I'm not coding, you'll find me playing or watching football, or travelling around the world.
+                </p>
+                <a class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700" download="" href="path/to/resume.pdf">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills Section -->
+<section class="py-20 bg-gray-100 dark:bg-gray-900" id="skills">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">
+            My Skills
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold mb-4">
+                    Frontend
+                </h3>
+                <p>
+                    HTML, CSS, JavaScript, Responsive Design
+                </p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold mb-4">
+                    Personal
+                </h3>
+                <p>
+                    Team work, motivated, hard working
+                </p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold mb-4">
+                    Tools
+                </h3>
+                <p>
+                    VS Code, Figma, Postman, JIRA, Slack, Canva
+                </p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold mb-4">
+                    Other
+                </h3>
+                <p>
+                    Ecommerce, Advertising, Agile Methodology, Problem Solving, Team Collaboration
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section class="py-20 bg-white dark:bg-gray-800" id="projects">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">
+            My Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img alt="Screenshot of an e-commerce platform showing product listings and a shopping cart" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/26euCaDrWl2Phn-swTmvPp4nRil0mITVSyS50v947Jg.jpg" width="300"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-4">
+                        E-commerce Platform
+                    </h3>
+                    <p class="mb-4">
+                        A full-featured online store with payment integration, user authentication, and admin dashboard.
+                    </p>
+                    <p class="mb-4">
+                        <strong>
+                            Technologies:
+                        </strong>
+                        React, Node.js, MongoDB, Stripe
+                    </p>
+                    <a class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700" href="#">
+                        View Project
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img alt="Screenshot of a task management app showing a list of tasks and team collaboration features" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/uBnIsfjOmvrS0sBYmDjBby3SAFxCJsqMHEH-YGdrr7c.jpg" width="300"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-4">
+                        Task Management App
+                    </h3>
+                    <p class="mb-4">
+                        A collaborative task management application with real-time updates and team features.
+                    </p>
+                    <p class="mb-4">
+                        <strong>
+                            Technologies:
+                        </strong>
+                        Vue.js, Firebase, Vuex
+                    </p>
+                    <a class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700" href="#">
+                        View Project
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img alt="Screenshot of a weather dashboard showing current weather and forecasts for a selected location" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/ByPuPj3PyhJtzlCLmF9jhwvO1jH8y2lr-Lqi-Ya0AG8.jpg" width="300"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-4">
+                        Weather Dashboard
+                    </h3>
+                    <p class="mb-4">
+                        A weather application that provides real-time weather data and forecasts for any location.
+                    </p>
+                    <p class="mb-4">
+                        <strong>
+                            Technologies:
+                        </strong>
+                        JavaScript, OpenWeather API, Chart.js
+                    </p>
+                    <a class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700" href="#">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 bg-gray-100 dark:bg-gray-900" id="contact">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">
+            Get In Touch
+        </h2>
+        <div class="max-w-lg mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <form id="contactForm">
+                <div class="mb-6">
+                    <label class="block text-gray-700 dark:text-gray-300 mb-2" for="name">
+                        Name
+                    </label>
+                    <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="name" name="name" required="" type="text"/>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 dark:text-gray-300 mb-2" for="email">
+                        Email
+                    </label>
+                    <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="email" name="email" required="" type="email"/>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 dark:text-gray-300 mb-2" for="subject">
+                        Subject
+                    </label>
+                    <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="subject" name="subject" required="" type="text"/>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 dark:text-gray-300 mb-2" for="message">
+                        Message
+                    </label>
+                    <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="message" name="message" required="" rows="5">
+       </textarea>
+                </div>
+                <button class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700" type="submit">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-100 py-8">
+    <div class="container mx-auto px-6 text-center">
+        <ul class="flex justify-center space-x-6 mb-6">
+            <li>
+                <a class="text-gray-100 hover:text-blue-600" href="https://github.com/AbdelmalekYoussef">
+                    <i class="fab fa-github">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="text-gray-100 hover:text-blue-600" href="https://www.linkedin.com/in/youssef-abdelmalek-68996b263">
+                    <i class="fab fa-linkedin-in">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="text-gray-100 hover:text-blue-600" href="#">
+                    <i class="fab fa-x">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="text-gray-100 hover:text-blue-600" href="https://www.instagram.com/abdel__youssef/">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+            </li>
+        </ul>
+        <p>
+            © 2025 Abdelmalek Youssef. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+<script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check for saved theme preference or use preferred color scheme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        body.classList.add('dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    // Toggle theme
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark');
+        if (body.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            localStorage.setItem('theme', 'light');
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
+
+    // Smooth Scrolling for Navigation Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Form submission with animation
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const form = this;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+
+        // Show sending state
+        submitBtn.innerHTML = 'Sending...';
+        submitBtn.disabled = true;
+
+        // Simulate form submission (replace with actual form submission)
+        setTimeout(() => {
+            // Success state
+            submitBtn.innerHTML = 'Message Sent!';
+            submitBtn.style.backgroundColor = '#28a745';
+
+            // Reset form
+            form.reset();
+
+            // Reset button after delay
+            setTimeout(() => {
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.style.backgroundColor = '';
+                submitBtn.disabled = false;
+            }, 3000);
+        }, 2000);
+    });
+</script>
+</body>
+</html>
